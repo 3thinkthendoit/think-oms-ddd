@@ -1,4 +1,4 @@
-# think-oms
+# think-oms-ddd
 基于DDD四层架构的订单中台，此文只是一篇DEMO 供领域驱动设计实践参考
 
 # 背景
