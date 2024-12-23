@@ -1,3 +1,5 @@
+![image](https://github.com/user-attachments/assets/87e74021-5126-45a8-81dc-b566ab48b80d)
+
 # think-oms-ddd
 基于DDD四层架构的订单中台，此文只是一篇DEMO 供领域驱动设计实践参考
 
