@@ -29,7 +29,7 @@ public class ShippingCallbackAggregate {
     public static ShippingCallbackAggregate create(SkuShippingCommand command){
         command.validate();
         ShippingCallbackAggregate aggregate = new ShippingCallbackAggregate();
-        aggregate.orderId = new OrderId(command.getOrderNo());
+        aggregate.orderId = new OrderId(command.getWmsOrderNo());
         aggregate.orderSkuItems = Maps.newHashMap();
         return aggregate;
     }
