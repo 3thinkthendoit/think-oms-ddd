@@ -1,5 +1,6 @@
 package com.think.oms.domain.pl.response;
 
+import com.think.oms.domain.pl.ShippingCallbackResult;
 import lombok.Builder;
 import lombok.Data;
 
@@ -7,7 +8,5 @@ import lombok.Data;
 @Builder
 public class ShippingCallbackResponse {
 
-    private Boolean success;
-
-    private String msg;
+   private ShippingCallbackResult callbackResult;
 }

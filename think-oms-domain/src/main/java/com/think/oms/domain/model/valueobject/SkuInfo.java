@@ -52,7 +52,7 @@ public class SkuInfo {
 
     public void init(SkuFullInfo skuFullInfo){
         skuFullInfo.validate();
-        this.skuId = skuFullInfo.getSkuId();
+        this.skuId = skuFullInfo.getExternalSkuId();
         this.skuType = skuFullInfo.getSkuType();
         this.externalSkuId = skuFullInfo.getExternalSkuId();
         this.externalSkuCode = skuFullInfo.getExternalSkuCode();

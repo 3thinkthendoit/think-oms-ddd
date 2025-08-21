@@ -73,8 +73,7 @@ public class OrderShippingDomainService {
                 //.shippingInfos();
                 .build();
         ShippingCallbackResponse response = shippingCallbackGateway.callback(request);
-        Integer status = response.getSuccess()?1:-1;
-        aggregate.makeShippingCallbackRecord(status, JSONObject.toJSONString(response));
+        aggregate.handleCallbackResult(response.getCallbackResult());
 
     }
 

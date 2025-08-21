@@ -4,6 +4,7 @@ import com.alibaba.fastjson.JSONObject;
 import com.google.common.collect.Maps;
 import com.think.oms.domain.model.constant.OrderSource;
 import com.think.oms.domain.model.dp.OrderId;
+import com.think.oms.domain.pl.ShippingCallbackResult;
 import com.think.oms.domain.pl.SkuItemInfo;
 import com.think.oms.domain.pl.command.SkuShippingCommand;
 import lombok.Getter;
@@ -69,22 +70,24 @@ public class ShippingCallbackAggregate {
         });
     }
 
-    /**
-     * 新发货信息
-     * @param skuCode
-     * @param shippingAmount
-     */
-    public void modifyShippingInfo(String skuCode,Integer shippingAmount,String expressCode,String expressNo){
-        ShippingSkuItem shippingSkuItem  = orderSkuItems.get(skuCode);
-        Assert.notNull(shippingSkuItem,String.format("ofc skuCode=%s 无法匹配订单skuCode!!!",skuCode));
-        shippingSkuItem.modifyShippingAmount(shippingAmount);
-    }
+//    /**
+//     * 新发货信息
+//     * @param skuCode
+//     * @param shippingAmount
+//     */
+//    public void modifyShippingInfo(String skuCode,Integer shippingAmount,String expressCode,String expressNo){
+//        ShippingSkuItem shippingSkuItem  = orderSkuItems.get(skuCode);
+//        Assert.notNull(shippingSkuItem,String.format("ofc skuCode=%s 无法匹配订单skuCode!!!",skuCode));
+//        shippingSkuItem.modifyShippingAmount(shippingAmount);
+//    }
 
     /**
-     * 创建发货回传记录
+     * 处理发货回传结果
      */
-    public void makeShippingCallbackRecord(Integer status,String callResult){
+    public void handleCallbackResult(ShippingCallbackResult callbackResult){
         this.shippingCallbackRecord = new ShippingCallbackRecord(this.orderId.getOrderNo(),this.orderId.getExternalOrderNo(),
-                this.orderId.getOrderSource(), JSONObject.toJSONString(this.orderSkuItems),status,callResult);
+                this.orderId.getOrderSource(), JSONObject.toJSONString(this.orderSkuItems),
+                callbackResult.getCallStatus(),callbackResult.getResult());
+        //更新sku 回传状态
     }
 }
