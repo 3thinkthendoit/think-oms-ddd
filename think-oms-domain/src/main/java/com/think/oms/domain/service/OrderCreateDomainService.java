@@ -11,7 +11,7 @@ import com.think.oms.domain.pl.response.OrderQueryResponse;
 import com.think.oms.domain.pl.response.RiskCheckResponse;
 import com.think.oms.domain.pl.response.SkuInfoQueryResponse;
 import com.think.oms.domain.port.gateway.*;
-import org.springframework.beans.factory.annotation.Autowired;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.util.Assert;
 import org.springframework.util.CollectionUtils;
@@ -24,11 +24,11 @@ import java.util.Map;
 @Service
 public class OrderCreateDomainService {
 
-    @Autowired
+    @Resource
     OrderInfoGateway orderQueryGateway;
-    @Autowired
+    @Resource
     SkuInfoQueryGateway skuInfoQueryGateway;
-    @Autowired
+    @Resource
     RiskCheckGateway riskCheckGateway;
 
     /**

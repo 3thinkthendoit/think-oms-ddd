@@ -2,7 +2,7 @@ server:
   port: 8000
 spring:
   datasource:
-    driver-class-name: com.mysql.jdbc.Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/think-oms?characterEncoding=UTF-8&autoReconnect=true&autoReconnectForPools=true&useUnicode=true&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true&useSSL=false
     username: root
     password: d*sN3n3F6*23hwdP
@@ -22,5 +22,5 @@ spring:
       max-open-prepared-statements: 20
       max-pool-prepared-statement-per-connection-size: 20
 mybatis:
-  mapper-locations: classpath:mappers/*xml
+  mapper-locations: classpath*:mapper/*.xml
   type-aliases-package: com.think.oms.infrastructure.core.mybatis.po

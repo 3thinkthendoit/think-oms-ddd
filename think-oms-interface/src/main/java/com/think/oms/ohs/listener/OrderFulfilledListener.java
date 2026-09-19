@@ -3,7 +3,7 @@ package com.think.oms.ohs.listener;
 import com.think.oms.domain.pl.event.OrderFulfillEvent;
 import com.think.oms.local.OrderLocalService;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
+import jakarta.annotation.Resource;
 import org.springframework.context.event.EventListener;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Component;
@@ -15,7 +15,7 @@ import org.springframework.stereotype.Component;
 @Slf4j
 public class OrderFulfilledListener {
 
-    @Autowired
+    @Resource
     OrderLocalService orderLocalService;
 
 

@@ -13,18 +13,18 @@ import com.think.oms.infrastructure.core.mybatis.mapper.OrderSkuInfoMapper;
 import com.think.oms.infrastructure.core.mybatis.mapper.OrderSkuItemInfoMapper;
 import com.think.oms.infrastructure.core.mybatis.po.OrderBaseInfo;
 import com.think.oms.infrastructure.core.mybatis.po.OrderSkuItemInfo;
-import org.springframework.beans.factory.annotation.Autowired;
+import jakarta.annotation.Resource;
 import org.springframework.util.Assert;
 import org.springframework.util.CollectionUtils;
 import java.util.List;
 
 public class OrderFulfillRepositoryImpl implements OrderFulfillRepository {
 
-    @Autowired
+    @Resource
     OrderInfoMapper orderInfoMapper;
-    @Autowired
+    @Resource
     OrderSkuInfoMapper orderSkuInfoMapper;
-    @Autowired
+    @Resource
     OrderSkuItemInfoMapper orderSkuItemInfoMapper;
 
     /**

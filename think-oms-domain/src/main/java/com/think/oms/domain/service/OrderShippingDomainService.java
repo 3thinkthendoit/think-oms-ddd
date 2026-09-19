@@ -12,7 +12,7 @@ import com.think.oms.domain.port.gateway.OrderFulfillGateway;
 import com.think.oms.domain.port.gateway.OrderInfoGateway;
 import com.think.oms.domain.port.gateway.ShippingCallbackGateway;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;
 
@@ -20,11 +20,11 @@ import org.springframework.util.CollectionUtils;
 @Slf4j
 public class OrderShippingDomainService {
 
-    @Autowired
+    @Resource
     OrderInfoGateway orderInfoGateway;
-    @Autowired
+    @Resource
     ShippingCallbackGateway shippingCallbackGateway;
-    @Autowired
+    @Resource
     OrderFulfillGateway orderFulfillGateway;
 
     public void initBaseInfo(ShippingCallbackAggregate aggregate){

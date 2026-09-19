@@ -7,17 +7,17 @@ import com.think.oms.domain.port.gateway.ShippingCallbackGateway;
 import com.think.oms.infrastructure.acl.api.douyin.DouyinClient;
 import com.think.oms.infrastructure.acl.api.pdd.PinduoduoClient;
 import com.think.oms.infrastructure.acl.api.taobao.TaoBaoClient;
-import org.springframework.beans.factory.annotation.Autowired;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Component;
 
 @Component
 public class ShippingCallbackGatewayImpl implements ShippingCallbackGateway {
 
-    @Autowired
+    @Resource
     TaoBaoClient taoBaoClient;
-    @Autowired
+    @Resource
     DouyinClient douyinClient;
-    @Autowired
+    @Resource
     PinduoduoClient pinduoduoClient;
     @Override
     public ShippingCallbackResponse callback(ShippingCallbackRequest request) {

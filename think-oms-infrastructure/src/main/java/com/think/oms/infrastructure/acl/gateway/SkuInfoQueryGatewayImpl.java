@@ -7,7 +7,7 @@ import com.think.oms.domain.pl.request.SkuInfoQueryRequest;
 import com.think.oms.domain.pl.response.SkuInfoQueryResponse;
 import com.think.oms.domain.port.gateway.SkuInfoQueryGateway;
 import com.think.oms.infrastructure.core.http.HttpClient;
-import org.springframework.beans.factory.annotation.Autowired;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Component;
 import org.springframework.util.CollectionUtils;
 import java.util.List;
@@ -19,7 +19,7 @@ import java.util.Map;
 @Component
 public class SkuInfoQueryGatewayImpl implements SkuInfoQueryGateway {
 
-    @Autowired
+    @Resource
     HttpClient httpClient;
 
     public SkuInfoQueryResponse query(SkuInfoQueryRequest request){

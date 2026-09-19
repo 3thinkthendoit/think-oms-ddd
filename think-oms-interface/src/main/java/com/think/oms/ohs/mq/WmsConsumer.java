@@ -5,7 +5,7 @@ import com.think.oms.app.service.OrderAppService;
 import com.think.oms.domain.pl.command.SkuShippingCommand;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.rocketmq.spring.core.RocketMQListener;
-import org.springframework.beans.factory.annotation.Autowired;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Component;
 
 /**
@@ -16,7 +16,7 @@ import org.springframework.stereotype.Component;
 //@RocketMQMessageListener(topic = "order-fulfillment-center", consumerGroup = "order-fulfillment-center-group")
 public class WmsConsumer implements RocketMQListener<String> {
 
-    @Autowired
+    @Resource
     OrderAppService orderAppService;
 
     @Override

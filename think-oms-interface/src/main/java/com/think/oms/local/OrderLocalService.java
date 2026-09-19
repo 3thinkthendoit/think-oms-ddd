@@ -6,14 +6,14 @@ import com.think.oms.domain.pl.command.OrderAssCommand;
 import com.think.oms.domain.pl.command.OrderCreateCommand;
 import com.think.oms.domain.pl.command.SkuShippingCommand;
 import com.think.oms.domain.pl.query.OrderInfoQuery;
-import org.springframework.beans.factory.annotation.Autowired;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
 public class OrderLocalService {
 
-    @Autowired
+    @Resource
     OrderAppService orderAppService;
 
     public void createOrder(OrderCreateCommand command) {

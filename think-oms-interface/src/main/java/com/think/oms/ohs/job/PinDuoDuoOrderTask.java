@@ -3,7 +3,7 @@ package com.think.oms.ohs.job;
 import com.think.oms.domain.pl.command.OrderCreateCommand;
 import com.think.oms.infrastructure.acl.api.pdd.PinduoduoClient;
 import com.think.oms.local.OrderLocalService;
-import org.springframework.beans.factory.annotation.Autowired;
+import jakarta.annotation.Resource;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
@@ -16,9 +16,9 @@ import java.util.Date;
 @Component
 public class PinDuoDuoOrderTask {
 
-    @Autowired
+    @Resource
     OrderLocalService orderLocalService;
-    @Autowired
+    @Resource
     PinduoduoClient pinduoduoClient;
 
     @Scheduled(fixedRate = 1000L*60*5)

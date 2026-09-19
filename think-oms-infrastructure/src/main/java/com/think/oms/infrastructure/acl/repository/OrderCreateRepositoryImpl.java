@@ -16,7 +16,7 @@ import com.think.oms.infrastructure.core.mybatis.po.OrderBaseInfo;
 import com.think.oms.infrastructure.core.mybatis.po.OrderSkuInfo;
 import com.think.oms.infrastructure.core.mybatis.po.OrderSkuItemInfo;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.Assert;
@@ -27,11 +27,11 @@ import java.util.List;
 @Slf4j
 public class OrderCreateRepositoryImpl implements OrderCreateRepository {
 
-    @Autowired
+    @Resource
     OrderInfoMapper orderInfoMapper;
-    @Autowired
+    @Resource
     OrderSkuInfoMapper orderSkuInfoMapper;
-    @Autowired
+    @Resource
     OrderSkuItemInfoMapper orderSkuItemInfoMapper;
 
     /**

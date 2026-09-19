@@ -25,7 +25,7 @@ import com.think.oms.domain.service.OrderCreateDomainService;
 import com.think.oms.domain.service.OrderFulfillDomainService;
 import com.think.oms.domain.service.OrderShippingDomainService;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import java.util.List;
 
@@ -36,23 +36,23 @@ import java.util.List;
 @Service
 public class OrderAppService {
 
-    @Autowired
+    @Resource
     OrderCreateDomainService orderCreateDomainService;
-    @Autowired
+    @Resource
     OrderCreateRepository orderCreateRepository;
-    @Autowired
+    @Resource
     OrderFulfillRepository orderFulfillRepository;
-    @Autowired
+    @Resource
     OrderEventPublisher orderEventPublisher;
-    @Autowired
+    @Resource
     OrderFulfillDomainService orderFulfillDomainService;
-    @Autowired
+    @Resource
     OrderShippingDomainService orderShippingDomainService;
-    @Autowired
+    @Resource
     OrderInfoGateway orderInfoGateway;
-    @Autowired
+    @Resource
     OrderFulfillGateway orderFulfillGateway;
-    @Autowired
+    @Resource
     SkuShippingRepository shippingRepository;
 
     /**

@@ -2,14 +2,18 @@ package com.think.oms.domain.pl;
 
 import com.think.oms.domain.model.constant.SkuCategory;
 import com.think.oms.domain.model.constant.SkuType;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.springframework.util.Assert;
 
 import java.util.List;
 
 @Data
 @Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class SkuFullInfo {
 
 

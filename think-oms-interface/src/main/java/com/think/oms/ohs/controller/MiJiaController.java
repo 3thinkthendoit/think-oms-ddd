@@ -3,7 +3,7 @@ package com.think.oms.ohs.controller;
 import com.google.common.collect.Maps;
 import com.think.oms.domain.pl.command.OrderCreateCommand;
 import com.think.oms.local.OrderLocalService;
-import org.springframework.beans.factory.annotation.Autowired;
+import jakarta.annotation.Resource;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -17,7 +17,7 @@ import java.util.Map;
 public class MiJiaController {
 
 
-    @Autowired
+    @Resource
     OrderLocalService orderLocalService;
 
     /**

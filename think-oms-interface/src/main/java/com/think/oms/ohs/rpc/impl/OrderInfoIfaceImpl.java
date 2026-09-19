@@ -6,7 +6,7 @@ import com.think.oms.domain.pl.query.OrderInfoQuery;
 import com.think.oms.ohs.dto.req.OrderInfoQueryReq;
 import com.think.oms.ohs.dto.resp.OrderInfoQueryResp;
 import com.think.oms.ohs.rpc.OrderInfoIface;
-import org.springframework.beans.factory.annotation.Autowired;
+import jakarta.annotation.Resource;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
@@ -15,7 +15,7 @@ import java.util.List;
 @RestController
 public class OrderInfoIfaceImpl implements OrderInfoIface {
 
-    @Autowired
+    @Resource
     OrderAppService orderAppService;
 
     @Override

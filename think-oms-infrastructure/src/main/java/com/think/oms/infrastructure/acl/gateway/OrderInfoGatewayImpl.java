@@ -10,7 +10,7 @@ import com.think.oms.domain.port.gateway.OrderInfoGateway;
 import com.think.oms.domain.port.gateway.SkuInfoQueryGateway;
 import com.think.oms.infrastructure.core.mybatis.mapper.OrderInfoMapper;
 import com.think.oms.infrastructure.core.mybatis.po.OrderBaseInfo;
-import org.springframework.beans.factory.annotation.Autowired;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Component;
 import java.util.List;
 
@@ -21,9 +21,9 @@ import java.util.List;
 @Component
 public class OrderInfoGatewayImpl implements OrderInfoGateway {
 
-    @Autowired
+    @Resource
     OrderInfoMapper orderInfoMapper;
-    @Autowired
+    @Resource
     SkuInfoQueryGateway skuInfoQueryGateway;
 
     /**
