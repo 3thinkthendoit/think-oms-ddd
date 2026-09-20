@@ -1,7 +1,7 @@
 package com.think.oms.domain.port.gateway;
 
-import com.think.oms.domain.pl.request.OrderQueryRequest;
-import com.think.oms.domain.pl.response.OrderQueryResponse;
+import com.think.oms.domain.port.pl.acl.request.OrderQueryRequest;
+import com.think.oms.domain.port.pl.acl.response.OrderQueryResponse;
 
 public interface OrderInfoGateway {
 

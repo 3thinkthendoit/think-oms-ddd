@@ -1,7 +1,7 @@
 package com.think.oms.infrastructure.acl.gateway;
 
-import com.think.oms.domain.pl.request.RiskCheckRequest;
-import com.think.oms.domain.pl.response.RiskCheckResponse;
+import com.think.oms.domain.port.pl.acl.request.RiskCheckRequest;
+import com.think.oms.domain.port.pl.acl.response.RiskCheckResponse;
 import com.think.oms.domain.port.gateway.RiskCheckGateway;
 import org.springframework.stereotype.Component;
 

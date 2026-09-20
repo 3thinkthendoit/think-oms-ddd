@@ -1,7 +1,7 @@
 package com.think.oms.domain.port.gateway;
 
-import com.think.oms.domain.pl.request.RiskCheckRequest;
-import com.think.oms.domain.pl.response.RiskCheckResponse;
+import com.think.oms.domain.port.pl.acl.request.RiskCheckRequest;
+import com.think.oms.domain.port.pl.acl.response.RiskCheckResponse;
 
 public interface RiskCheckGateway {
 

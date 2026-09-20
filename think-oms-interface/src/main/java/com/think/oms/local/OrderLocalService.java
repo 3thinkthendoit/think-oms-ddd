@@ -1,11 +1,11 @@
 package com.think.oms.local;
 
 import com.think.oms.app.service.OrderAppService;
-import com.think.oms.domain.pl.OrderInfo;
-import com.think.oms.domain.pl.command.OrderAssCommand;
-import com.think.oms.domain.pl.command.OrderCreateCommand;
-import com.think.oms.domain.pl.command.SkuShippingCommand;
-import com.think.oms.domain.pl.query.OrderInfoQuery;
+import com.think.oms.domain.port.pl.acl.OrderInfo;
+import com.think.oms.domain.port.pl.osh.command.OrderAssCommand;
+import com.think.oms.domain.port.pl.osh.command.OrderCreateCommand;
+import com.think.oms.domain.port.pl.osh.command.SkuShippingCommand;
+import com.think.oms.domain.port.pl.osh.query.OrderInfoQuery;
 import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import java.util.List;

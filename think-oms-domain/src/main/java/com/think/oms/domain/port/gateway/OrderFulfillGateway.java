@@ -1,9 +1,9 @@
 package com.think.oms.domain.port.gateway;
 
-import com.think.oms.domain.pl.request.OrderFulfillRequest;
-import com.think.oms.domain.pl.request.ShippingQueryRequest;
-import com.think.oms.domain.pl.response.OrderFulfillResponse;
-import com.think.oms.domain.pl.response.ShippingQueryResponse;
+import com.think.oms.domain.port.pl.acl.request.OrderFulfillRequest;
+import com.think.oms.domain.port.pl.acl.request.ShippingQueryRequest;
+import com.think.oms.domain.port.pl.acl.response.OrderFulfillResponse;
+import com.think.oms.domain.port.pl.acl.response.ShippingQueryResponse;
 
 public interface OrderFulfillGateway {
 

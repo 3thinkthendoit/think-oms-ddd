@@ -1,13 +1,12 @@
 package com.think.oms.domain.service;
 
-import com.alibaba.fastjson.JSONObject;
 import com.think.oms.domain.model.aggregate.shippingcallback.ShippingCallbackAggregate;
-import com.think.oms.domain.pl.request.OrderQueryRequest;
-import com.think.oms.domain.pl.request.ShippingCallbackRequest;
-import com.think.oms.domain.pl.request.ShippingQueryRequest;
-import com.think.oms.domain.pl.response.OrderQueryResponse;
-import com.think.oms.domain.pl.response.ShippingCallbackResponse;
-import com.think.oms.domain.pl.response.ShippingQueryResponse;
+import com.think.oms.domain.port.pl.acl.request.OrderQueryRequest;
+import com.think.oms.domain.port.pl.acl.request.ShippingCallbackRequest;
+import com.think.oms.domain.port.pl.acl.request.ShippingQueryRequest;
+import com.think.oms.domain.port.pl.acl.response.OrderQueryResponse;
+import com.think.oms.domain.port.pl.acl.response.ShippingCallbackResponse;
+import com.think.oms.domain.port.pl.acl.response.ShippingQueryResponse;
 import com.think.oms.domain.port.gateway.OrderFulfillGateway;
 import com.think.oms.domain.port.gateway.OrderInfoGateway;
 import com.think.oms.domain.port.gateway.ShippingCallbackGateway;

@@ -2,7 +2,7 @@ package com.think.oms.domain.model.valueobject;
 
 import com.think.oms.domain.model.constant.SkuCategory;
 import com.think.oms.domain.model.constant.SkuType;
-import com.think.oms.domain.pl.SkuFullInfo;
+import com.think.oms.domain.port.pl.acl.SkuFullInfo;
 import lombok.Getter;
 import org.springframework.util.Assert;
 

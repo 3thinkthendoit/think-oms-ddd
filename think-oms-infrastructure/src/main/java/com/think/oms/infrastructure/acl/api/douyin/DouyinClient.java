@@ -1,9 +1,8 @@
 package com.think.oms.infrastructure.acl.api.douyin;
 
-import com.think.oms.domain.model.constant.OrderSource;
-import com.think.oms.domain.pl.ShippingCallbackResult;
-import com.think.oms.domain.pl.request.ShippingCallbackRequest;
-import com.think.oms.domain.pl.response.ShippingCallbackResponse;
+import com.think.oms.domain.port.pl.acl.ShippingCallbackResult;
+import com.think.oms.domain.port.pl.acl.request.ShippingCallbackRequest;
+import com.think.oms.domain.port.pl.acl.response.ShippingCallbackResponse;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 

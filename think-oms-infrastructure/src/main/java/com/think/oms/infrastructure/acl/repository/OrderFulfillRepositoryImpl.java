@@ -5,7 +5,7 @@ import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.google.common.collect.Lists;
 import com.think.oms.domain.model.aggregate.orderfulfill.OrderFulfillAggregate;
 import com.think.oms.domain.model.constant.OrderStatus;
-import com.think.oms.domain.pl.FulfillOrderInfo;
+import com.think.oms.domain.port.pl.acl.FulfillOrderInfo;
 import com.think.oms.domain.port.repository.OrderFulfillRepository;
 import com.think.oms.infrastructure.acl.pl.OrderPLUtil;
 import com.think.oms.infrastructure.core.mybatis.mapper.OrderInfoMapper;

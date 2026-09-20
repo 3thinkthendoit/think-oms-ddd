@@ -1,8 +1,8 @@
 package com.think.oms.infrastructure.acl.gateway;
 
 import com.think.oms.domain.model.constant.OrderSource;
-import com.think.oms.domain.pl.request.ShippingCallbackRequest;
-import com.think.oms.domain.pl.response.ShippingCallbackResponse;
+import com.think.oms.domain.port.pl.acl.request.ShippingCallbackRequest;
+import com.think.oms.domain.port.pl.acl.response.ShippingCallbackResponse;
 import com.think.oms.domain.port.gateway.ShippingCallbackGateway;
 import com.think.oms.infrastructure.acl.api.douyin.DouyinClient;
 import com.think.oms.infrastructure.acl.api.pdd.PinduoduoClient;

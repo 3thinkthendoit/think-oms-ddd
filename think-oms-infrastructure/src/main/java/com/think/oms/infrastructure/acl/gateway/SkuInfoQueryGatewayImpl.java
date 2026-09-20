@@ -2,9 +2,9 @@ package com.think.oms.infrastructure.acl.gateway;
 
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
-import com.think.oms.domain.pl.SkuFullInfo;
-import com.think.oms.domain.pl.request.SkuInfoQueryRequest;
-import com.think.oms.domain.pl.response.SkuInfoQueryResponse;
+import com.think.oms.domain.port.pl.acl.SkuFullInfo;
+import com.think.oms.domain.port.pl.acl.request.SkuInfoQueryRequest;
+import com.think.oms.domain.port.pl.acl.response.SkuInfoQueryResponse;
 import com.think.oms.domain.port.gateway.SkuInfoQueryGateway;
 import com.think.oms.infrastructure.core.http.HttpClient;
 import jakarta.annotation.Resource;

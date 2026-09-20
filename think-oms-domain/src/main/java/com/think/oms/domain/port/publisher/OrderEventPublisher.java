@@ -1,6 +1,6 @@
 package com.think.oms.domain.port.publisher;
 
-import com.think.oms.domain.pl.event.OrderOperationEvent;
+import com.think.oms.domain.port.pl.osh.event.OrderOperationEvent;
 
 public interface OrderEventPublisher {
 

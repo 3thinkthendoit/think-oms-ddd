@@ -1,11 +1,7 @@
 package com.think.oms.infrastructure.acl.repository;
 
 import com.alibaba.fastjson.JSONObject;
-import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
-import com.baomidou.mybatisplus.core.toolkit.Wrappers;
-import com.google.common.collect.Lists;
 import com.think.oms.domain.model.aggregate.create.OrderCreateAggregate;
-import com.think.oms.domain.model.aggregate.orderfulfill.OrderFulfillAggregate;
 import com.think.oms.domain.model.aggregate.shippingcallback.ShippingCallbackAggregate;
 import com.think.oms.domain.port.repository.OrderCreateRepository;
 import com.think.oms.infrastructure.acl.pl.OrderPLUtil;
@@ -19,8 +15,6 @@ import lombok.extern.slf4j.Slf4j;
 import jakarta.annotation.Resource;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
-import org.springframework.util.Assert;
-import org.springframework.util.CollectionUtils;
 import java.util.List;
 
 @Repository

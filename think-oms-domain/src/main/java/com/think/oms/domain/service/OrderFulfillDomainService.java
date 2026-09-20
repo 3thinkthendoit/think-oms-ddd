@@ -1,7 +1,7 @@
 package com.think.oms.domain.service;
 
 import com.think.oms.domain.model.aggregate.orderfulfill.OrderFulfillAggregate;
-import com.think.oms.domain.pl.WarehouseInfo;
+import com.think.oms.domain.port.pl.acl.WarehouseInfo;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import java.util.List;

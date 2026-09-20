@@ -1,6 +1,6 @@
 package com.think.oms.domain.model.aggregate.orderfulfill;
 
-import com.think.oms.domain.pl.SkuItemInfo;
+import com.think.oms.domain.port.pl.acl.SkuItemInfo;
 import lombok.Getter;
 import java.util.Map;
 

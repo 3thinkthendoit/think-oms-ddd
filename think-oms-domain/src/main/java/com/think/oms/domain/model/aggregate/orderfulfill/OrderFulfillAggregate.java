@@ -2,8 +2,8 @@ package com.think.oms.domain.model.aggregate.orderfulfill;
 
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
-import com.think.oms.domain.pl.SkuItemInfo;
-import com.think.oms.domain.pl.WarehouseInfo;
+import com.think.oms.domain.port.pl.acl.SkuItemInfo;
+import com.think.oms.domain.port.pl.acl.WarehouseInfo;
 import lombok.Getter;
 import org.springframework.util.CollectionUtils;
 import java.util.List;
